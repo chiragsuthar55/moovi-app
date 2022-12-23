@@ -1,0 +1,300 @@
+:root {
+  --banner: url(./assets/MovieBanner.webp);
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none !important;
+  box-sizing: border-box;
+  border: none;
+}
+.App {
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+}
+/*********** Navbar ***************/
+.navbar {
+  background-color: black !important;
+}
+.navbar-nav a:hover {
+  color: red !important;
+}
+.navbar-brand {
+  color: red !important;
+}
+.navbar .signinBtn {
+  background-color: red;
+  color: white;
+  font-weight: 500;
+}
+.navbar .signinBtn:hover {
+  background-color: #ea2027;
+  font-weight: 500;
+}
+/********* Banner **********/
+.banner {
+  height: 70vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8),
+      transparent 60%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(./assets/MovieBanner.webp);
+}
+.banner p {
+  font-weight: 500;
+}
+.banner-form .btn {
+  background-color: red;
+  font-weight: 500;
+}
+.banner-form .btn:hover {
+  background-color: #ea2027;
+  font-weight: 500;
+}
+/******************* Hr Tag *******************/
+hr {
+  border: 10px solid #535c68 !important;
+  /* border: 10px solid white !important; */
+  margin: 0 !important;
+}
+/************* Story-Banner ******************/
+.story-banner {
+  height: 50vh;
+}
+.story-banner p {
+  font-weight: 500;
+}
+.story-banner img {
+  background-image: var(--banner);
+  background-size: auto 90%;
+  background-repeat: no-repeat;
+}
+.tv-container {
+  width: 75%;
+}
+@media only screen and (max-width: 720px) {
+  .story-banner .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tv-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .story-banner {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .story-banner .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tv-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .story-banner {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1380px) {
+  .story-banner .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tv-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .story-banner {
+    height: auto;
+  }
+}
+/************** card-banner **************/
+.card-banner {
+  height: 130vh;
+}
+.card-title {
+  font-weight: 500 !important;
+}
+/*************** Card *******************/
+.cardlist {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
+}
+.cardtile img {
+  object-fit: cover !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 1380px) {
+  .cardlist {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+  }
+  .card-banner {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .cardlist {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+  }
+  .card-banner {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .cardlist {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+  }
+  .card-banner {
+    height: auto;
+  }
+}
+/****************** Subscribe *****************/
+.subscribe {
+  height: auto;
+}
+.accordion .card {
+  background-color: #1e272e !important;
+  font-size: 1.1rem;
+}
+.btn-link {
+  font-size: 1.2rem !important;
+  color: white !important;
+}
+.subscribe-msg {
+  font-size: 1.5rem;
+}
+/*************** footer ********************/
+.footer {
+  height: 40vh;
+}
+.footer .chirag a {
+  color: white !important;
+}
+.footer .chirag a:hover {
+  color: red !important;
+}
+/********************* signin *******************/
+.signin {
+  height: 100vh;
+  font-weight: 500;
+}
+.signin-container {
+  border: 2px solid white;
+}
+.signin-logo {
+  color: red;
+  text-align: center;
+  font-size: 2.8rem;
+}
+.signin .btn {
+  background-color: red;
+  color: white;
+  font-weight: 500;
+}
+.signin .btn:hover {
+  background-color: #ea2027;
+  font-weight: 500;
+}
+.form {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.form input {
+  width: 18rem;
+}
+
+/******************* Responsive Design 1025-1200 ************************/
+/*********** Desktop,Large screens *******/
+
+@media only screen and (max-width: 1200px) {
+  .footer {
+    height: 55vh;
+  }
+}
+
+/*********** laptops,Small screens 769-1024 *******/
+
+@media only screen and (max-width: 1024px) {
+  .footer {
+    height: 35vh;
+  }
+  .btn {
+    margin: 1rem;
+  }
+  hr {
+    border: 7px solid #535c68 !important;
+  }
+}
+
+/*********** ipads, Tablets 481-768 *******/
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    height: 70vh;
+  }
+  hr {
+    border: 5px solid #535c68 !important;
+  }
+}
+
+/*********** Mobile devices 320-480*******/
+
+@media only screen and (max-width: 480px) {
+  .cardlist {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+  }
+  .card-banner {
+    height: auto;
+  }
+  hr {
+    border: 3px solid #535c68 !important;
+  }
+}
+/********************* Subscriptionpage **********************/
+.subscription .table {
+  color: white !important;
+  width: initial;
+}
+
+.subscription {
+  height: 100vh;
+}
+.logo {
+  padding: 3rem;
+}
+.payment .btn,
+.table .btn {
+  background-color: red;
+}
+.payment .btn:hover,
+.table .btn:hover {
+  background-color: #ea2027;
+}
